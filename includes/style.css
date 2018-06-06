@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
 
 body{
     background-color: #f5f9fc;
@@ -57,7 +57,9 @@ img{
     padding: 18px;
     background-color: #0000006e;
 }
-
+#title{
+    font-family: 'Poppins', sans-serif;
+}
 .nav-wrapper {
     background-repeat: no-repeat;
     background-position: 38px -62px;
