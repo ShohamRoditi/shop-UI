@@ -23,14 +23,13 @@ function addItems(){
             <a href="item.html">
               <div class="card-image">
                   <img src="images/photoproject.jpg">
-                  <span class="card-title">Card Title</span>
+                  <span class="card-title"></span>
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Clothes-Up design orange shirt with button front</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#"></a>
                 </div>
               </a>  
           </div>
