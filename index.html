@@ -14,96 +14,30 @@
     <link rel="stylesheet" href="includes/style.css">
     <title>Clothes-Up</title>
 </head>
-<body>
-  <!-- HEADER -->
-    <nav class="nav-extended">
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-          <ul id="nav-mobile" class="right">
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
-            <li><a href="form.html"><i class="fas fa-clipboard"></i></a></li>
-            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="#"><i class="fas fa-bell"></i></a></li>
-          </ul>
-        </div>
-        <div class="nav-content white">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a class="black-text active" href="items.html" target="_self">ALL</a></li>
-            <li class="tab"><a class="black-text" href="items.html" target="_self">MEN</a></li>
-            <li class="tab"><a class="black-text" href="items.html" target="_self">WOMEN</a></li>
-            <li class="tab"><a class="black-text" href="items.html" target="_self">KIDS</a></li>
-          </ul>
-        </div>
-      </nav>
-<!-- BREAD CRUMBS -->
-      <div>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-<!-- SIDE NAVBAR     -->
-      <ul class="sidenav" id="mobile-demo">
-       <li>
-       	<div class="asymmetric">
-          <img src="images/face.jpg" id='profile-pic' alt="">
-        </div>
-       </li> 
-        <li><a href="sass.html">friends</a></li>
-        <li><a href="badges.html">gallery</a></li>
-        <li><a href="collapsible.html">history</a></li>
-        <li><a href="collapsible.html">closet</a></li>
-        <li><a href="collapsible.html">premium</a></li>
-        <li><a href="collapsible.html">help center</a></li>
-      </ul>
-<!-- MAIN       -->
-      <div class="container">
-        <div class="row margin-down">
-            <div class="col s12 m12 l12">
-                <img class='z-depth-2' src="images/indeximg1.svg" alt="">
+<body class='login'>   
+        <div class="container">
+                <div class="row">
+          
+                    <div class="col s6 offset-s3 z-depth-3" id="panell">
+                      <img src="images/image.png" alt="logo">
+                      <form>
+                        <div class="input-field" name='username' id="username">
+                            <input  type="text" class="validate">
+                            <label class='white-text' for="username">Username</label>
+                        </div>
+                        <div class="input-field" id="password">
+                        <input  type="password" class="validate">
+                        <label class='white-text' for="password">Password</label>
+                    </div>
+                    <p>
+                        <input type="checkbox" id="remember"/>
+                        <label class='white-text' for="remember" id="checkbox" >Remember me</label>
+                    </p>
+                    <a href="home.html" class="waves-effect waves-light btn blue-grey lighten-1" id="loginbtn">Login</a> 
+                  </form>
+                  </div>
+                </div>
+          
               </div>
-          <div class="col s12 m6">
-            <img class='z-depth-2' src="images/indeximgtest.svg" alt="">
-          </div>
-          <div class="col s12 m6">
-              <img class='z-depth-2' src="images/indeximg2.svg" alt="">
-            </div>
-            <div class="col s12 m12">
-                <img class='z-depth-2' src="images/indeximg3.svg" alt="">
-              </div>
-      </div>
-      </div>
-<!-- FOOTER          -->
-      <footer class="page-footer ">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">HELP AND INFORMATION</h5>
-                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Delivery Information</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Student Discount</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Size Guide</a></li>
-                </ul>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">ABOUT US</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">About Clothes-Up</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Offices</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Clothes-Up
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-      <script src="includes/app.js"></script>
 </body>
 </html>
