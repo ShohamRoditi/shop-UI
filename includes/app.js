@@ -22,7 +22,7 @@ function addItems(){
           <div class="card hoverable">
             <a href="item.html">
               <div class="card-image">
-                  <img src="images/sample-1.jpg">
+                  <img src="images/photoproject.jpg">
                   <span class="card-title">Card Title</span>
                 </div>
                 <div class="card-content">
