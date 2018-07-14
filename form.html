@@ -55,17 +55,79 @@
         <li><a href="collapsible.html">help center</a></li>
       </ul>
 
-      <div class="container">
+      <div class="container perfer">
+      	<h2>YOUR PREFERENCE</h2>
         <form action="#" method="GET">
-            <div class="row">
-                    <div class="col s12">
-                      <div class="card-panel white">
-                      <span ><i class="fas fa-dollar-sign"></i> Prices</span>
-                      <span class="right">range</span>
+          <div class="row">
+          	   <div class="col s12">
+                      <div class="card-panel white card_form card hoverable">
+                      <span><i class="fas fa-tshirt"></i> Style</span>
+                      <span class="right"><p>
+					      <label>
+					        <input type="checkbox" name="clothing style" value="elegant" />
+					        <span>Elegant</span>
+					      </label>
+					    </p></span>
+					     <span class="right"><p>
+					      <label>
+					        <input type="checkbox" name="clothing style" value="sporting" />
+					        <span>Sporting </span>
+					      </label>
+					    </p></span>
+					     <span class="right"><p>
+					      <label>
+					        <input type="checkbox" name="clothing style" value="daily" />
+					        <span>Daily</span>
+					      </label>
+					    </p></span>
                       </div>
-                    </div> 
+                    </div>
+          	
+          	<div class="col s12">
+                      <div class="card-panel white card_form card hoverable">
+                      <span >Body Shape</span>
+                      <span class="right">
+	                      <p>
+						   <label>
+						     <input class="with-gap" name="conservative" value="no" type="radio" checked />
+						     <span>Full</span>
+						   </label>
+						  </p></span>
+                      <span class="right">
+	                      <p>
+						    <label>
+						      <input class="with-gap" name="conservative" value="little" type="radio" checked />
+						      <span>Slim</span>
+						    </label>
+						  </p></span>
+                      
+                        <span class="right">
+	                      <p>
+						    <label>
+						      <input class="with-gap" name="conservative" value="very" type="radio" checked />
+						      <span>Stocky</span>
+						    </label>
+						  </p></span>
+                      </div>
+                    </div>
+                    
                      <div class="col s12">
-                      <div class="card-panel white">
+                      <div class="card-panel white card_form card hoverable">
+                      <span >Color</span>
+                      <span class="right">
+                      <!-- <label></label> -->
+  					<select class="browser-default" name="seasons">
+	   					<option value="" disabled selected>Choose your option</option>
+					    <option value="black">Black</option>
+					    <option value="white">White</option>
+					    <option value="yellow">Yellow</option>
+					    <option value="red">Red</option>
+  					</select></span>
+                      </div>
+                    </div>
+                    
+                     <div class="col s12">
+                      <div class="card-panel white card_form card hoverable">
                       <span >Seasons</span>
                       <span class="right">
                       <!-- <label></label> -->
@@ -79,20 +141,20 @@
                     </div>
                     
                     <div class="col s12">
-                      <div class="card-panel white">
+                      <div class="card-panel white card_form card hoverable">
                       <span ><i class="far fa-clock"></i> Time</span> 
                       <span class="right"><input type="text" class="timepicker"></span>
                       </div>
                     </div>
                     
                     <div class="col s12">
-                      <div class="card-panel white">
+                      <div class="card-panel white card_form card hoverable">
                       <span ><i class="far fa-calendar-alt"></i> Date</span>
                       <span class="right"><input type="text" class="datepicker"></span>
                       </div>
                     </div>
                     <div class="col s12">
-                      <div class="card-panel white">
+                      <div class="card-panel white card_form">
                       <span >Conservative</span>
                       <span class="right">
 	                      <p>
@@ -119,7 +181,7 @@
                       </div>
                     </div>
                     <div class="col s12">
-                      <div class="card-panel white">
+                      <div class="card-panel white card_form card hoverable">
                       <span >Sweaty</span>
                       <span class="right">
 	                      <p>
@@ -147,29 +209,7 @@
                       </div>
                     </div>
                   
-                    <div class="col s12">
-                      <div class="card-panel white">
-                      <span ><i class="fas fa-tshirt"></i> Style</span>
-                      <span class="right"><p>
-					      <label>
-					        <input type="checkbox" name="clothing style" value="elegant" />
-					        <span>Elegant</span>
-					      </label>
-					    </p></span>
-					     <span class="right"><p>
-					      <label>
-					        <input type="checkbox" name="clothing style" value="sporting" />
-					        <span>Sporting </span>
-					      </label>
-					    </p></span>
-					     <span class="right"><p>
-					      <label>
-					        <input type="checkbox" name="clothing style" value="daily" />
-					        <span>Daily</span>
-					      </label>
-					    </p></span>
-                      </div>
-                    </div>
+                 
                   <div class="center">
                     <a class="waves-effect waves-light btn blue-grey darken-2">CLEAR</a>
                     <a class="waves-effect waves-light btn blue-grey darken-2">SEARCH</a>
