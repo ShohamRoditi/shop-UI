@@ -1,6 +1,12 @@
+<?php
+  include 'includes/db/db.php';
+  if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +15,14 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="includes/style.css">
+
   <title>Clothes-Up</title>
 </head>
 
 <body>
-  <!-- HEADER -->
   <nav class="nav-extended">
     <div id="mainNav" class="nav-wrapper">
       <a href="index.html" class="brand-logo center"></a>
@@ -65,18 +70,16 @@
     </div>
   </nav>
   <!-- BREAD CRUMBS -->
-  <div class='container section'>
-    <a href="">HOME ></a>
-    <a href="">WOMEN ></a>
-    <a href="">ITEMS</a>
+  <div>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
   </div>
-  <div class="divider"></div>
-
   <!-- SIDE NAVBAR     -->
   <ul class="sidenav" id="mobile-demo">
     <li>
       <div class="asymmetric">
-        <img src="images/face.jpg" id='profile-pic' alt="face">
+        <img src="images/face.jpg" id='profile-pic' alt="">
       </div>
     </li>
     <li>
@@ -98,52 +101,82 @@
       <a href="collapsible.html">help center</a>
     </li>
   </ul>
+  <main>
+    <div class="section container">
+      <h1>
+        <i class="fas fa-shopping-cart"></i> <?php if(isset($_SESSION["name"])) {echo $_SESSION["name"];} else {echo "My ";}?> Cart</h1>
+      <table class="highlight responsive-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Update</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
 
-  <div class="section">
-    <h5 id='title' class='center'>WOMEN COLLECTION</h5>
-  </div>
-  <div class="container">
-    <div class="divider"></div>
-    <div class="section">
+        <tbody>
+        </tbody>
+      </table>
       <div class="row">
-        <div class="input-field col s12 m4">
-          <select class="icons">
-            <option value="" disabled selected>Sort</option>
-            <option value="" data-icon="images/office.jpg">What's new</option>
-            <option value="" data-icon="images/office.jpg">Price high to low</option>
-            <option value="" data-icon="images/yuna.jpg">Price low to high</option>
-          </select>
-          <!-- <label>Images in select</label> -->
+        <div class="col s6 m4 l4 section sum">
+          <span>TOTAL  </span><span id="totalSum"></span>
+          <div class="divider"></div>
+          <input id="coupon" type="text" placeholder="coupon">
+          <a id="checkout" class="col s12 l12 waves-effect waves-light btn-large white-text amber darken-1">CHECK OUT</a>
         </div>
-        <div class="input-field col s12 m4">
-          <select class="icons">
-            <option value="" disabled selected>Brand</option>
-            <option value="" data-icon="images/office.jpg" class="left">Asos</option>
-            <option value="" data-icon="images/office.jpg" class="left">Boohoo</option>
-            <option value="" data-icon="images/yuna.jpg" class="left">Adidas originals</option>
-          </select>
-          <!-- <label>Images in select</label> -->
-        </div>
-        <div class="input-field col s12 m4">
-          <select class="icons">
-            <option value="" disabled selected>Price</option>
-            <option value="" data-icon="images/office.jpg" class="left">5$-100$</option>
-            <option value="" data-icon="images/office.jpg" class="left">100$-200$</option>
-            <option value="" data-icon="images/yuna.jpg" class="left">200$-350$</option>
-          </select>
-          <!-- <label>Images in select</label> -->
+      </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="item modal">
+      <div class="modal-img">
+        <img src="images/model1.jpg" alt="">
+      </div>
+      <div class="modal-contant container">
+        <h5></h5>
+        <h6></h6>
+        <span>Catalog number: </span>
+        <span id="item_id" class="section"></span>
+        <div class="section row">
+          <p class="col l2">
+            <label>
+              <input name="group2" type="radio" value="blue" checked />
+              <span id="blue"></span>
+            </label>
+          </p>
+          <p class="col l2">
+            <label>
+              <input name="group2" type="radio" value="yellow" />
+              <span class="checkmark" id="yellow"></span>
+            </label>
+          </p>
+          <p class="col l2">
+            <label>
+              <input name="group2" type="radio" value="red" />
+              <span id="red"></span>
+            </label>
+          </p>
+          <div class="section input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose Size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <a id="confirm" class="col s12 m12 l12 modal-close waves-effect waves-light btn white-text center">CONFIRM</a>
         </div>
       </div>
     </div>
-    <div id="addItems" class="row">
-      <!-- add items here -->
-    </div>
-  </div>
-  <!-- FOOTER -->
-  <footer class="page-footer">
+
+  </main>
+
+           
+  <footer class="page-footer ">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s6">
           <h5 class="white-text">HELP AND INFORMATION</h5>
           <ul>
             <li>
@@ -160,7 +193,7 @@
             </li>
           </ul>
         </div>
-        <div class="col l4 offset-l2 s12">
+        <div class="col l4 offset-l2 s6">
           <h5 class="white-text">ABOUT US</h5>
           <ul>
             <li>
@@ -187,7 +220,8 @@
     </div>
   </footer>
   <script src="includes/js/app.js"></script>
-  <script src="includes/js/items.js"></script>
+  <script src="includes/js/cart.js"></script>
+
 </body>
 
 </html>

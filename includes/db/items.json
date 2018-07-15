@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Tropical Top",
+    "price": 25,
+    "color": "black",
+    "size": "S",
+    "url": "images/tropical.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 2,
+    "name": " Banana Top",
+    "price": 19,
+    "color": "yellow",
+    "size": "M",
+    "url": "images/banana top.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 3,
+    "name": "Pink Top",
+    "price": 22,
+    "color": "pink",
+    "size": "S",
+    "url": "images/pink shirt.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 4,
+    "name": "Smile Top",
+    "price": 20,
+    "color": "black & white",
+    "size": "M",
+    "url": "images/smile.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 5,
+    "name": "Yellow Top",
+    "price": 25,
+    "color": "yellow",
+    "size": "S",
+    "url": "images/yellow.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 6,
+    "name": "Party Top",
+    "price": 25,
+    "color": "white",
+    "size": "S",
+    "url": "images/silver.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 7,
+    "name": "Blue Top",
+    "price": 23,
+    "color": "red",
+    "size": "M",
+    "url": "images/navy.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 8,
+    "name": "Red Top",
+    "price": 18,
+    "color": "red",
+    "size": "M",
+    "url": "images/photoproject.jpg",
+    "type": "daily"
+  },
+  {
+    "id": 9,
+    "name": "Nike Top",
+    "price": 29,
+    "color": "pink",
+    "size": "S",
+    "url": "images/nike.jpg",
+    "type": "sporting"
+  },
+  {
+    "id": 10,
+    "name": "Adidas Top",
+    "price": 29,
+    "color": "pink",
+    "size": "S",
+    "url": "images/adidas.jpg",
+    "type": "sporting"
+  },
+  {
+    "id": 11,
+    "name": "Black Top",
+    "price": 18,
+    "color": "red",
+    "size": "M",
+    "url": "images/flowertop.jpg",
+    "type": "elegant"
+  },
+  {
+    "id": 12,
+    "name": "Colorful Top",
+    "price": 18,
+    "color": "red",
+    "size": "M",
+    "url": "images/colorful.jpg",
+    "type": "elegant"
+  },
+  {
+    "id": 13,
+    "name": "White Top",
+    "price": 18,
+    "color": "red",
+    "size": "M",
+    "url": "images/blueandwhite.jpg",
+    "type": "elegant"
+  },
+  {
+    "id": 14,
+    "name": "Elegnat Top",
+    "price": 27,
+    "color": "black",
+    "size": "S",
+    "url": "images/blackcombo.jpg",
+    "type": "elegant"
+  },
+  {
+    "id": 15,
+    "name": "Mustrad Top",
+    "price": 29,
+    "color": "Yellow",
+    "size": "M",
+    "url": "images/mustard.jpg",
+    "type": "elegant"
+  },
+  {
+    "id": 16,
+    "name": "White Top",
+    "price": 18,
+    "color": "red",
+    "size": "M",
+    "url": "images/white.jpg",
+    "type": "elegant"
+  }
+]
