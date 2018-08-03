@@ -1,43 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="includes/style.css">
-    <title>Clothes-Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="includes/style.css">
+  <title>Clothes-Up</title>
 </head>
-<body class='login'>   
-        <div class="container">
-                <div class="row">
-          
-                    <div class="col s6 offset-s3 z-depth-3" id="panell">
-                      <img src="images/image.png" alt="logo">
-                      <form>
-                        <div class="input-field" name='username' id="username">
-                            <input  type="text" class="validate">
-                            <label class='white-text' for="username">Username</label>
-                        </div>
-                        <div class="input-field" id="password">
-                        <input  type="password" class="validate">
-                        <label class='white-text' for="password">Password</label>
-                    </div>
-                    <p>
-                        <input type="checkbox" id="remember"/>
-                        <label class='white-text' for="remember" id="checkbox" >Remember me</label>
-                    </p>
-                    <a href="home.html" class="waves-effect waves-light btn blue-grey lighten-1" id="loginbtn">Login</a> 
-                  </form>
-                  </div>
-                </div>
-          
-              </div>
+
+<body>
+  <nav class="nav-extended">
+    <div id="mainNav" class="nav-wrapper">
+      <a href="index.html" class="brand-logo center"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="fas fa-bars"></i>
+      </a>
+      <ul id="nav-mobile" class="right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li>
+          <a href="login.php">
+            <i class="fas fa-clipboard"></i>
+          </a>
+        </li>
+        <li>
+          <a href="cart.php">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-bell"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content white">
+      <ul class="tabs tabs-transparent">
+        <li class="tab">
+          <a class="black-text active" href="index.html" target="_self">ALL</a>
+        </li>
+        <li class="tab">
+          <a class="black-text" href="items.html" target="_self">MEN</a>
+        </li>
+        <li class="tab">
+          <a class="black-text" href="items.html" target="_self">WOMEN</a>
+        </li>
+        <li class="tab">
+          <a class="black-text" href="items.html" target="_self">KIDS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <div class="asymmetric">
+        <img src="images/face.jpg" id='profile-pic' alt="face">
+      </div>
+    </li>
+    <li>
+      <a href="sass.html">friends</a>
+    </li>
+    <li>
+      <a href="badges.html">gallery</a>
+    </li>
+    <li>
+      <a href="collapsible.html">history</a>
+    </li>
+    <li>
+      <a href="collapsible.html">closet</a>
+    </li>
+    <li>
+      <a href="collapsible.html">premium</a>
+    </li>
+    <li>
+      <a href="collapsible.html">help center</a>
+    </li>
+  </ul>
+  <!-- MAIN       -->
+  <div class="section container">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <img class='z-depth-2' src="images/indeximg1.jpg" alt="img1">
+      </div>
+      <div class="col card-panel blue lighten-3 text-white hide-on-small-only s12 m12 l12 center">
+        <p class="white-text">LIMITED EDITION</p>
+        <h3 class="white-text">NEW STYLES ADDED</h3>
+        <h2 class="white-text">UP TO 70% OFF</h2>
+      </div>
+      <div class="col s12 m6 l6">
+        <img class='z-depth-2' src="images/home_img2.jpg" alt="img2">
+      </div>
+      <div class="col s12 m6 l6">
+        <img class='z-depth-2' src="images/home_img3.jpg" alt="img3">
+      </div>
+      <div class="col s12 m12">
+        <img class='z-depth-2' src="images/home_img4.png" alt="img4">
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER          -->
+  <footer class="page-footer ">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s6">
+          <h5 class="white-text">HELP AND INFORMATION</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Help</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Delivery Information</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Student Discount</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Size Guide</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s6">
+          <h5 class="white-text">ABOUT US</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">About Clothes-Up</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Contact</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Offices</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Clothes-Up
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script src="includes/js/app.js"></script>
 </body>
+
 </html>
